@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top"></include>
+
+    <Chronometer
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/timer"
+        android:format="%s"
+        android:id="@+id/chronometer_time"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F7F7F7"
+        android:padding="5dp"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#55000000"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="120dp"
+                    android:padding="5dp"
+                    android:text="  "
+                    android:textColor="#DD000000"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_margin="3dp"
+                    android:background="#55000000"></View>
+
+                <RadioGroup
+
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/answerA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_backgroud"
+                        android:button="@drawable/checkbox"
+                        android:minHeight="60dp"
+                        android:padding="5dp"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_margin="3dp"
+                        android:background="#55000000"></View>
+
+                    <RadioButton
+                        android:id="@+id/answerB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_backgroud"
+                        android:button="@drawable/checkbox"
+                        android:minHeight="60dp"
+                        android:padding="5dp"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_margin="3dp"
+                        android:background="#55000000"></View>
+
+                    <RadioButton
+                        android:id="@+id/answerC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_backgroud"
+                        android:button="@drawable/checkbox"
+                        android:minHeight="60dp"
+                        android:padding="5dp"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_margin="3dp"
+                        android:background="#55000000"></View>
+
+                    <RadioButton
+                        android:id="@+id/answerD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_backgroud"
+                        android:button="@drawable/checkbox"
+                        android:minHeight="60dp"
+                        android:padding="5dp"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_margin="3dp"
+                        android:background="#55000000"></View>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_explaination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question Explaination"
+                    android:textColor="#ff0000"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_previous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_select"
+                android:padding="5dp"
+                android:text="上一题" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_select"
+                android:padding="5dp"
+                android:text="下一题" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top"></include>
+
+    <Chronometer
+        android:id="@+id/chronometer_time"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F7F7F7"
+        android:drawableLeft="@drawable/timer"
+        android:format="%s"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#55000000"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="120dp"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#DD000000"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_margin="3dp"
+                    android:background="#55000000"></View>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/answerA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_backgroud"
+                        android:button="@drawable/checkbox"
+                        android:minHeight="60dp"
+                        android:padding="5dp"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_margin="3dp"
+                        android:background="#55000000"></View>
+
+                    <CheckBox
+                        android:id="@+id/answerB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_backgroud"
+                        android:button="@drawable/checkbox"
+                        android:minHeight="60dp"
+                        android:padding="5dp"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_margin="3dp"
+                        android:background="#55000000"></View>
+
+                    <CheckBox
+
+                        android:id="@+id/answerC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_backgroud"
+                        android:button="@drawable/checkbox"
+                        android:minHeight="60dp"
+                        android:padding="5dp"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_margin="3dp"
+                        android:background="#55000000"></View>
+
+                    <CheckBox
+
+                        android:id="@+id/answerD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_backgroud"
+                        android:button="@drawable/checkbox"
+                        android:minHeight="60dp"
+                        android:padding="5dp"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_margin="3dp"
+                        android:background="#55000000"></View>
+
+                    <CheckBox
+                        android:id="@+id/answerE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_backgroud"
+                        android:button="@drawable/checkbox"
+                        android:minHeight="60dp"
+                        android:padding="5dp"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_margin="3dp"
+                        android:background="#55000000"></View>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_explaination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question Explaination"
+                    android:textColor="#ff0000"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+
+                android:id="@+id/layout_twobutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_previous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_select"
+                    android:text="上一题" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_select"
+                    android:text="下一题" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/layout_onebutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_select"
+                    android:text="返回主页面" />
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
